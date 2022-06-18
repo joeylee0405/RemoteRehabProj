@@ -7,21 +7,19 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App-header {
+  display: "flex";
+  align-items: "center";
+  background-color: #f1f1f1;
+  padding: 20px;
+  color: black;
+  text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.App-body{
+  background-color: aliceblue;
+  text-align: center;
+  height: 100vh;
 }
 
 .App-link {
@@ -35,4 +33,17 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+#BarChart { 
+  display: flex; 
+  flex-direction: row;
+  align-items: flex-end; 
+  justify-content: center; 
+  margin: 50px;
+}
+
+.bar {
+  background-color: #6B7DB3; 
+  width: 10px; 
 }
