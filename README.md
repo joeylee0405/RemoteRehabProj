@@ -1,6 +1,6 @@
 # Experimentation with the implementation of the remote rehabilitation system architecture using the Exertiles game framework. 
 
-This is the repository for the implementation of the remote rehabilitation system architecture using the Exertiles game framework.  The solution is intended to demonstrate the shared database solution in our master's thesis, "Remote Follow-up of Patients using Exergames in Physical Therapy."The application illustrates how the data is shared between the frontend and backend developed in React and Unity for the Exertiles framework. Both sides use Node.js to manipulate, retrieve, and upload data to the shared database.
+This is the repository for the implementation of the remote rehabilitation system architecture using the Exertiles game framework. The solution is intended to demonstrate the shared database solution in our master's thesis "Remote Follow-up of Patients using Exergames in Physical Therapy". The application illustrates how the data is shared between the frontend and backend developed in React and Unity for the Exertiles framework. Both sides use Node.js to manipulate, retrieve, and upload data to the shared database.
 
 
 1.  **Remote rehabilitation system**
