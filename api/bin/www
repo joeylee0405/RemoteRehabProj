@@ -8,6 +8,9 @@ var app = require('../app');
 var debug = require('debug')('api:server');
 var http = require('http');
 
+
+
+
 /**
  * Get port from environment and store in Express.
  */
@@ -21,6 +24,7 @@ app.set('port', port);
 
 var server = http.createServer(app);
 const WebSocket = require('ws');
+const { rootCertificates } = require('tls');
 const wss = new WebSocket.Server({ server: server });
 wss.on('connection', (ws) => {
   console.log('A new client connected!')
