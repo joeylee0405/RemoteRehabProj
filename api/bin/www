@@ -23,15 +23,17 @@ app.set('port', port);
  */
 
 var server = http.createServer(app);
+var username = ''
 const WebSocket = require('ws');
 const { rootCertificates } = require('tls');
 const wss = new WebSocket.Server({ server: server });
 wss.on('connection', (ws) => {
   console.log('A new client connected!')
   ws.on('message', (data) => { //data from client
-    console.log('Welcome from new client \n :' +  data)
-   ws.send('data is sent from websocket server :)') 
+    console.log('Welcome from new client \n :' + data)
+    ws.send('data is sent from websocket server : )') 
   })
+
 
   
 })

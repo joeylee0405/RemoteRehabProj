@@ -3,7 +3,7 @@ var bodyParser = require('body-parser')
 var router = express.Router();
 var mysql = require("mysql");
 
-// Connectiong to our local database
+// Connecting to our local database
 var db = mysql.createPool({
   host: 'localhost',
   user: 'root',
