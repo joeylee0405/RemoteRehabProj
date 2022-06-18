@@ -1,4 +1,5 @@
 var express = require("express");
+var bodyParser = require('body-parser')
 var router = express.Router();
 var mysql = require("mysql");
 
@@ -12,11 +13,12 @@ var db = mysql.createPool({
 });
 
 
+
 router.get("/", function (req, res, next) {
   const sqlInsert = "SELECT * FROM patients;"
   db.query(sqlInsert, (err, result) => {
     console.log(result);
   })
-  res.send("this is the patients side")
+  res.send("Kari, Ole, Morgan") //TODO send the patients list to the client
 });
 module.exports = router;
